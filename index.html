@@ -1,12 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-   
+<meta charset="UTF-8">
+<title>Campus Canteen</title>
+<style>
+  body {
+    background-color: #fffbe6;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: #f2b705;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header h1 {
+    margin: 0;
+  }
+
+  .nav {
+    background-color: #ffe580;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #7a5c00;
+    font-weight: bold;
+  }
+
+  .section {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .section h2 {
+    color: #b38600;
+    border-bottom: 2px solid #f2b705;
+    padding-bottom: 5px;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .menu-item {
+    background-color: white;
+    border: 1px solid #f2b705;
+    padding: 10px;
+    flex: 1 1 200px;
+  }
+
+  .menu-item h3 {
+    margin: 0 0 5px 0;
+  }
+
+  .price {
+    color: #b38600;
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 1px solid #f2b705;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #ffe580;
+  }
+
+  .footer {
+    background-color: #f2b705;
+    color: #333333;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
 </head>
 <body>
-    <div> class="</div>
+
+  <div class="header">
+    <h1>Campus Canteen</h1>
+    <p>Quick, tasty food between classes</p>
+  </div>
+
+  <div class="nav">
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#hours">Hours</a>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Campus Canteen! We serve fresh, home-style food to students every day, from morning breakfast to evening snacks. We also serve affordable lunch and snacks right on campus.</p>
+  </div>
+
+  <div class="section" id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-list">
+      <div class="menu-item">
+        <h3>Veg Thali</h3>
+        <p>Rice, dal, sabzi, and roti.</p>
+        <p class="price">Price: Rs 60</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Masala Dosa</h3>
+        <p>Crispy dosa with potato filling and chutney.</p>
+        <p class="price">Price: Rs 40</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Cold Coffee</h3>
+        <p>Chilled coffee with ice cream.</p>
+        <p class="price">Price: Rs 30</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Veg Sandwich</h3>
+        <p>Grilled sandwich with veggies and cheese.</p>
+        <p class="price">Price: Rs 35</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section" id="hours">
+    <h2>Canteen Hours</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Monday to Friday</td>
+        <td>8:00 AM - 6:00 PM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>9:00 AM - 3:00 PM</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>Closed</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <p>Campus Canteen</p>
+      <p>Near Main Block, College Campus</p>
+    </div>
+  </div>
+
+</body>
 </html>
